@@ -1,0 +1,621 @@
+/*--Обнуление--*/
+*{padding: 0;margin: 0;border: 0;}
+*,*::before,*::after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1.5;font-size: 18px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%; text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+/* ul li{list-style: none;} */
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+*{font-family: 'Rubik', sans-serif;}
+
+
+
+/*
+font-family: 'EB Garamond', serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Catamaran', sans-serif; (600)
+*/
+
+/*----------------------------------------------------------*/
+
+
+.wrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*-----------------header  style------------------*/
+
+.header {
+    width: 100%;
+    min-height: 10vh;
+    padding: 0 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #BCBABA;
+    position: relative;
+}
+
+.logo{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.header__logo {
+    display: inline-block;
+    color: #01996D;
+    font-size: 2rem;
+    text-shadow:0 0 3px rgb(5, 56, 28);
+}
+
+.header__menu {
+    display: flex;
+    margin-left: 9%;
+    width: 45%;
+    justify-content: space-between;
+
+}
+.menu a{
+    color: #292929;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.sign-in-button {
+    width: 15%;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.sign-in-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.header__button{
+    width: 60%;
+    height: 4.7vh;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+.button {
+    padding: 2% 5% 2% 5%;
+    background: #01996D;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    line-height: 150%;
+    text-transform:capitalize;
+    cursor: pointer;
+    user-select: none; /* Убираем текстовое выделение */
+	text-decoration: none;	/* Убираем подчеркивание */
+	outline: none; /* Убираем контур вокруг ссылки */
+}
+.button:hover {
+	background-color: #09815d; /*Цвет кнопки при наведении курсора*/
+    transition: 400ms;
+	}
+.button:active {
+        background-color: #02362f8e; /*Цвет кнопки при нажатии*/
+        transition: 400ms;
+    } 
+
+
+
+/*----------------main style-------------------------*/
+
+
+/*---------first-screen------------*/
+
+
+.main{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.first-screen {
+    display: flexbox;
+    width: 100%;
+    height: 81vh;
+    background:url(../images/bg.jpg);
+}
+
+.first-screen-info {
+    margin: 16vh 62.7% 29.5vh 14.3%;
+    width: 23%;
+    height: 36.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 14%;
+}
+.first-screen-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+    font-size: 4.22rem;
+    color: #01996D;
+}
+.first-screen-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 157%; 
+    color:#484848;
+    padding-bottom: 1.5rem;
+
+}
+.first-screen__button {
+    width:fit-content;
+    height: 10vh;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/*---------release------------*/
+
+.release {
+    width: 100%;
+    height: 150vh;
+    flex: content;
+}
+.relase-container {
+    width: 73.5%;
+    height:128vh;
+    margin: 17.2vh 12% 27vh 14.3%;
+}
+.release-offer-prompt {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5.5vh;
+}
+.prompt {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1.22rem;
+    color: #424242;
+    line-height: 157%;
+}
+.release-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.release-offer-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 2.77rem;
+    color: #01996D;
+    line-height: 137%;
+
+}
+.release-offer-text {
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #424242;
+    line-height: 150%;
+    padding-top: 10px;
+    height: auto;
+}
+.release-card-bloks {
+    margin-bottom: 4.6vh;
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    justify-content: space-between;
+}
+.release-card-blok {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-height: 86.7vh;
+}
+.card-blok-title {
+    height: 20.8vh;
+    width: 100%;
+    position: relative;
+}
+.card-blok1{
+    align-self: flex-start;
+}
+.card-blok2{
+    align-self: flex-end;
+
+}
+.card-blok3{
+    align-self: center;
+}
+.card-number {
+    font-family: 'EB Garamond', serif;
+    font-size: 8.33rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgba(1,153,109,0.2);
+
+}
+.card-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.83rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: rgb(0, 0, 0);
+    
+}
+.card1title{
+    position: absolute;
+    left: 22%;
+    bottom:2vh;
+}
+.card2title{
+    position: absolute;
+    left: 17%;
+    bottom: 2vh;
+}
+.card3title{
+    position: absolute;
+    left: 24%;
+    bottom: 4vh;
+}
+.card-blok-text {
+    flex: 1 1 auto;
+    max-height: 50%;
+    text-align: left;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #424242;
+    line-height: 150%;
+    padding: 0 10px;
+}
+.card-blok-img1{
+    border-radius: 14px;
+    width: 100%;
+    height: 46vh;
+    display: block;
+    background: url(../images/release/release1.png)bottom center no-repeat;
+}
+.card-blok-img2{
+    border-radius: 14px;
+    width: 100%;
+    height: 46vh;
+    display: block;
+    background: url(../images/release/release2.png)bottom center no-repeat;
+}
+.card-blok-img3{
+    border-radius: 14px;
+    width: 100%;
+    height: 46vh;
+    display: block;
+    background: url(../images/release/release3.png)bottom center no-repeat;
+}
+
+
+
+
+
+/*---------video-story------------*/
+
+
+.video-story {
+    position: relative;
+    width: 100%;
+    color: white;
+    background-color: #245852;
+    padding-right: 11.9%;
+    padding-left: 9.1%;
+    display: flex;
+    align-items: center;
+}
+.video-story-container {
+    margin: 16.66vh 0 ;
+    width: 100%;
+    max-height: 48.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.video-story__info {
+    flex-direction: column;
+    width: 32%;
+    max-height: 32.8vh;
+    justify-content: space-between;
+}
+.video-story-info__title {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 3.0rem;
+    line-height: 130%;
+}
+.video-story-info__text {
+    font-family: 'Rubik', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 150%;
+    padding-top: 4.6vh;
+
+}
+.video-story-info__button {
+    font-size: 1.2rem;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3.4vh;
+
+}
+.video-story__framevideo {
+    width:56%; 
+    height:49vh;
+    border-radius: 16px;
+    background-color: rgb(51, 51, 51);
+    position: relative;
+}
+
+
+.product {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.product-contaner {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 11.11vh;
+    width: 79%;
+    height: 69vh;
+    display: flex;
+}
+
+.product__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product-img-card {
+    position: absolute;
+    background:	rgba(1, 153, 109, 0.2);
+	overflow: hidden;
+    width: 85%;
+    height: 60vh;
+    top: 0;
+    right: 0;
+    border-radius: 1rem;
+}
+
+.product-img-card img{
+    width: 100%;
+	height: 100%;
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.img-card__offer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.28rem;
+    width: 42%;
+    padding: 22px 55px 30px 61px ;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2);
+}
+.img-card__offer-context {
+    display: contents;
+    position: relative;
+    width: 6.7%;
+    padding: 22px 82px;
+    color: #030303;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 0.77rem;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.img-card__offer-context span{
+    width: fit-content;
+    text-align: left;
+}
+
+.offer-context-underline{
+    display: block;
+    position: relative;
+    width: 64%;
+    height: 1px;
+    background-color: black;
+    margin-top: 7px;
+    margin-bottom: 13px;
+}
+
+.img-card__offer-photo {
+    width: 3.16rem;
+    height: 3.16rem;
+    border-radius: 50%;
+    background:	rgba(1, 153, 109, 0.2);
+    display: block;
+    overflow: hidden;
+	position: relative;
+}
+.img-card-name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    text-transform: capitalize;
+    line-height: 160%;
+    text-align: center;
+    color: #000;
+    padding-top: 15px;
+ 
+}
+
+.img-card__description-title {
+    display: block;
+    padding-top: 20px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 157%;
+}
+.img-card__description-text {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 0.61rem;
+    line-height: 157%;
+    text-transform: capitalize;
+    margin-top: 16px;
+}
+
+.img-card__description-text:before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(78, 78, 78);
+    border-radius: 50%;
+    margin:0 4px 1px 0;
+}
+
+.product-slogan {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+.product-slogan-text-up {
+    color: #424242;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1.38rem;
+    padding-bottom: 20px;
+}
+.product-slogan-title {
+    font-family: 'EB Garamond', serif;
+    line-height: 120%;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #01996D;
+    padding-bottom: 20px;
+}
+
+.product-slogan-text {
+    width: 90%;
+    color: #424242;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.11rem;
+    line-height: 157%;
+    padding-bottom: 40px;
+
+}
+
+.product-button {
+    padding: 10px 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.11rem;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------footer style-------------------------*/
+
+
+
+
+.footer {
+    color: white;
+    position: static;
+    
+    width: 100%;
+    height: 60.5vh;
+    background-color: #245852;
+    padding-left: 10%;
+    padding-top: 8.7vh;
+    
+}
+
+.footer-container{
+    width: fit-content;
+    max-height: 44vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.footer-logo {
+    color: #ffffff;
+    font-size: 2.22rem;
+    letter-spacing: 1px;
+    text-shadow:0 0 3px rgb(206, 206, 206);
+
+}
+
+
+
+
+.footer-item {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.11rem;
+    text-transform: capitalize;
+    padding-top: 55px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
